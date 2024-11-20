@@ -1,0 +1,77 @@
+* {
+  background: rgb(156, 205, 188);
+}
+
+.basic {
+  padding: 100px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.basic h1 {
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.basic p {
+  font-size: 15px;
+  margin: 0 0 30px 0;
+}
+
+.basic .container {
+  display: flex;
+  gap: 30px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.basic .container img {
+  width: 100%;
+}
+
+.basic figure {
+  flex: 1;
+  margin: 0;
+}
+/* 밑으로는 basic2 */
+.basic2 {
+  padding: 100px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.basic2 h1 {
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.basic2 p {
+  font-size: 15px;
+  margin: 0 0 30px 0;
+}
+
+.basic2 .container2 {
+  display: flex;
+  gap: 30px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.basic2 .container2 img {
+  width: 100%;
+}
+
+.basic2 figure {
+  flex: 1;
+  margin: 0;
+}
+
+h2 {
+  padding: 30px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+}

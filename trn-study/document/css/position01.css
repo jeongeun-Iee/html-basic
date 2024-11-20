@@ -1,0 +1,18 @@
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* 자기 자신을 움직이는 태그, 레이아웃을 안 깬다 */
+  width: 450px;
+  height: 350px;
+  background: rgb(129, 207, 253);
+}
+
+.popup button {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}

@@ -1,0 +1,719 @@
+/* * {
+    outline: 1px solid #277BC0;
+} */
+
+body {
+    font-family: Pretendard, Roboto, "Noto Sans KR", sans-serif;
+    letter-spacing: 0.04em;
+    color: #222222;
+}
+
+.container {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Header ---> */
+#Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    line-height: 80px;
+    font-size: 18px;
+    z-index: 999;
+    transition: 0.3s all ease-in-out;
+    color: #000;
+}
+
+#Header.on {
+    background-color: #ffffff;
+    line-height: 70px;
+    box-shadow: 2px 5px 40px 0 rgb(0 0 0 / 8%);
+}
+
+#Header.on .Gnb li>a  {
+    line-height: 70px;
+}
+
+#Header.on .search-box {
+    top: 20px;
+}
+
+.gnb.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Gnb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Gnb li>a {
+    position: relative;
+    display: block;
+    line-height: 80px;
+    padding: 0 30px;
+}
+
+.Gnb li>a:hover::after {
+    width: 100%;
+}
+
+.Gnb li>a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #ABA135;
+    transition: all 0.5s ease;
+    transform: translateX(-50%);
+}
+
+.area_util {
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+
+.search-box {
+    position: relative;
+    top: 25px;
+    padding: 10px;
+    height: 30px;
+    transition: 0.4s;
+    width: 30px;
+  }
+
+  .search-box:hover {
+        background-color: rgba(255, 255, 255, 1);
+    border: 1px solid #ddd;
+    width: 282px;
+  }
+
+  .search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    color: #000000;
+  }
+
+  .search-txt {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    padding: 0;
+    width: 0px;
+    border:none;
+    background: none;
+    outline: none;
+    font-size: 14px;
+    transition: .4s;
+  }
+
+  .search-box:hover > .search-txt{
+    width: 240px;
+    padding: 0 6px;
+  }
+
+  .xi-search {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.lang_btn {
+    font-size: 15px;
+}
+
+.lang_btn::after {
+    content:"\e942";
+    font-family: xeicon!important;
+}
+
+/* main-visual ---> */
+.main-visual {
+    width: 100%;
+    height: 100vh;
+}
+
+.main.swiper.mySwiper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.main-visual .swiper-slide.on {
+    transform: scale(1.5);
+    transition: .5s;
+}
+
+.main-visual .item01 {
+    background: url(../img/main-visual01.jpg) no-repeat center center/cover;
+}
+
+.main-visual .item02 {
+    background: url(../img/main-visual02.jpg) no-repeat center center/cover;
+}
+.main-visual .item03 {
+    background: url(../img/main-visual03.jpg) no-repeat center center/cover;
+}
+
+.main-visual .item_text {
+    position: absolute;
+    bottom: 96px;
+    left: 200px;
+}
+
+.main-visual .item_text p {
+    font-size: 26px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.main-visual .item_text strong {
+    font-size: 46px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 67px;
+}
+
+/* jakomo-best ---> */
+.jakomo-best {
+    padding: 100px 0;
+}
+
+.jakomo-best .title_box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+    line-height: 70px;
+}
+
+.jakomo-best .title_box::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -200px;
+    width: 1900px;
+    height: 1px;
+    background-color: #dddddd;
+}
+
+.jakomo-best .title_box h2 {
+    font-size: 30px;
+}
+
+.jakomo-best .title_box h2 strong {
+    font-weight: 700;
+}
+
+.jakomo-best .menu_tab {
+    display: flex;
+    font-size: 15px;
+}
+
+.jakomo-best .menu_tab a {
+    position: relative;
+    padding: 0 15px;
+}
+
+.jakomo-best .menu_tab  li:last-child>a {
+    padding: 0 0 0 15px;
+}
+
+.jakomo-best .menu_tab li>a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 1px;
+    height: 10px;
+    background-color: #ddd;
+    transform: translateY(-50%);
+}
+.jakomo-best .menu_tab  li:last-child>a::after {
+    display: none;
+}
+
+.best.swiper.mySwiper {
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.jakomo-best .swiper-slide {
+    width: calc(100% / 3 - 30px);
+}
+
+.jakomo-best .content_box p {
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 500;
+}
+
+.jakomo-best .fiveStar {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.sale_tag {
+    position: absolute;
+    top: 17px;
+    left: 19px;
+    background-color: #ABA135;
+    padding: 6px 11px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    z-index: 10;
+}
+
+.best_photo {
+    overflow: hidden;
+}
+
+.best_photo img:hover {
+    transform: scale(1.1);
+    transition: transform .5s;
+}
+
+.jakomo-best .price-tag {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    line-height: 20px;
+    padding-bottom: 22px;
+}
+
+.jakomo-best .price-tag .sale {
+    font-size: 14px;
+    text-decoration: line-through;
+    color: #999999;
+}
+
+.jakomo-best .price-tag .price {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.price-tag::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #D9D9D9;
+    margin-bottom: 5px;
+}
+
+.shopping_icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 18px;
+}
+
+.best .swiper-pagination {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.best .swiper-pagination span {
+    display: block;
+    padding: 3px;
+}
+
+.best .swiper-pagination-bullet {
+    border: 2px solid #2e2e2e;
+    background-color: #F9F9F9;
+} 
+
+.best .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #ABA135;
+    border: 2px solid #ABA135;
+}
+
+/* jakomo-sofa ---> */
+.jakomo-sofa {
+    padding: 25px 0 100px;
+}
+
+.jakomo-sofa .title_box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    line-height: 70px;
+    margin-bottom: 30px;
+}
+
+.jakomo-sofa .title_box::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -200px;
+    width: 1900px;
+    height: 1px;
+    background-color: #dddddd;
+}
+
+.jakomo-sofa .title_box h2 {
+    font-size: 30px;
+}
+
+.jakomo-sofa .title_box h2 strong {
+    font-weight: 700;
+}
+
+.viewAll_btn {
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.viewAll_btn a {
+    position: relative;
+    display: block;
+    line-height: 50px;
+}
+
+.viewAll_btn a:hover {
+    color: #ABA135;
+}
+
+.viewAll_btn a:hover::after {
+    width: 100%;
+}
+
+.viewAll_btn a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background-color: #ABA135;
+    transition: all 0.5s ease;
+    transform: translateX(-50%);
+}
+
+.grid.container {
+    display: grid;
+    grid-template-columns: 440px 440px 590px;
+    grid-template-rows: 320px 90px 250px ;
+    row-gap: 15px;
+	/* row의 간격을 10px로 */
+	column-gap: 15px;
+	/* column의 간격을 20px로 */
+} 
+
+.grid.container .item {
+    position: relative;
+    overflow: hidden;
+}
+
+/* .grid.container .item:hover .grid_item_text {
+    bottom: 0;
+} */
+
+.grid.container .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid.container .item img:hover {
+    transform: scale(1.1);
+    transition: transform .5s;
+}
+
+.grid.container .item:nth-child(1) {
+        /* 1번 라인에서 2칸 */
+        grid-column: 1 / span 2;
+        /* 1번 라인에서 3칸 */
+        grid-row: 1 / span 2;
+}
+
+.grid.container .item:nth-child(2) {
+        /* 1번 라인에서 2칸 */
+        grid-column: 3 / span 1;
+        /* 1번 라인에서 3칸 */
+        grid-row: 2 / span 2;
+}
+
+/* .grid_item_text {
+    display: none;
+    position: absolute;
+    bottom: -130px;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 999;
+    transition: 0.3s all ease-in-out;
+} */
+
+/* .grid_item_text strong {
+    display: block;
+    padding: 10px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 500;
+}
+
+.grid_item_text p {
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    font-weight: 500;
+} */
+
+/* jakomo-review ---> */
+.jakomo-review {
+    padding: 70px 0 70px;
+    text-align: center;
+    background-color: #F9F9F9;
+}
+
+.jakomo-review h2 {
+    position: relative;
+    font-size: 30px;
+    margin-bottom: 50px;
+    line-height: 50px;
+}
+
+.jakomo-review h2::after {
+    content: "BEST";
+    position: absolute;
+    top: -20px;
+    left: 56.5%;
+    color: #fff;
+    background-color: #ABA135;
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: 700;
+    width: 50px;
+    height: 50px;
+    border-radius: 0% 100% 10% 86% / 0% 86% 10% 100%;
+}
+
+.jakomo-review h2 strong {
+    font-weight: 700;
+}
+
+.review.swiper.mySwiper {
+    width: 100%;
+    padding-bottom: 50px ;
+}
+
+.review .swiper-wrapper {
+    width: 100%;
+}
+
+.jakomo-review .swiper-slide {
+    display: flex;
+    align-items: center;
+    width: 770px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+}
+
+.review .swiper-pagination {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.review .swiper-pagination span {
+    display: block;
+    padding: 3px;
+}
+
+.review .swiper-pagination-bullet {
+    border: 2px solid #545454;
+    background-color: #F9F9F9;
+} 
+
+.review .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #ABA135;
+    border: 2px solid #ABA135;
+}
+
+.jakomo-review .left_box {
+    width: 50%;
+}
+
+.jakomo-review .left_box img {
+    display: block;
+    width: 93%;
+    margin: auto 0 auto auto;
+}
+
+.jakomo-review .right_box {
+    width: 50%;
+    text-align: left;
+}
+
+.right_box_item {
+    padding: 30px;
+}
+
+.jakomo-review h4 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-bottom: 5px;
+}
+
+.jakomo-review .reviwStar {
+    margin-bottom: 40px;
+}
+
+.jakomo-review p {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+/* Footer ---> */
+#Footer {
+    padding: 30px 0;
+    background-color: #ffffff;
+}
+
+.ft_content .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.ft_list_item {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.policy {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    font-size: 14px;
+    margin: 30px 0 0 0;
+}
+
+.policy li>a {
+    position: relative;
+    padding: 0 20px;
+}
+
+.policy li>a::after {
+    content: "";
+    width: 1px;
+    height: 10px;
+    background-color: #ddd;
+    position: absolute;
+    top: 3px;
+    left: 0;
+}
+
+.policy li:first-child>a::after {
+    display: none;
+}
+
+.policy li:first-child>a {
+    padding: 0 20px 0 5px;
+}
+  
+.policy .personal {
+    font-weight: 700;
+}
+
+.ft-logo {
+    width: 12%;
+    margin-bottom: 20px;
+}
+  
+.ft-logo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.ft_det {
+    display: flex;
+    gap: 30px;
+}
+
+.ft_det dt {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.ft_det dd {
+    font-size: 40px;
+    letter-spacing: -0.04em;
+    color: #ABA135;
+    font-weight: 500;
+}
+
+.copyright {
+    position: relative;
+    font-size: 11px;
+    font-weight: 400;
+    font-family: 'roboto', sans-serif;
+    color: #333;
+}
+
+.copyright::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 780px;
+    height: 1px;
+    background-color: #ddd;
+    font-weight: 400;
+}

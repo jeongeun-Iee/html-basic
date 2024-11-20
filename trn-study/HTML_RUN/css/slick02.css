@@ -1,0 +1,135 @@
+img {
+    max-width: 100%;
+}
+
+.slider01 {
+    position: relative;
+    padding: 100px 0;
+}
+
+.slider01 figure {
+    padding: 0 30px;
+    filter: grayscale(1);
+    opacity: 0.3;
+
+}
+.slider01 figure.slick-current {
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+.slider01 .slick-dots {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.slider01 .slick-dots li {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 2px;
+    margin: 0 15px;
+}
+
+.slider01 .slick-dots li.slick-active {
+    background-color: #369;
+}
+
+.slider01 .slick-dots button {
+    display: none;
+}
+
+.slider01 .slider_arrows i {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* border-radius: 2px; */
+    padding: 10px 20px;
+    opacity: 0.7;
+}
+
+.slider01 .slider_arrows i:nth-child(1) {
+    margin: 0 0 0 -650px;
+}
+
+.slider01 .slider_arrows i:nth-child(2) {
+    margin: 0 0 0 650px;
+}
+
+.slider01 .box {
+    position: absolute;
+    top: 350px;
+    left: 55%;
+    transform: translateX(-600px);
+    width: 300px;
+    height: 420px;
+    background-color: #fff;
+    border: 1px solid #333;
+}
+
+.slider01 .box .line {
+    position: absolute;
+    top: 47px;
+    left: -30px;
+    width: 60px;
+    border: 2px solid #008850;
+}
+
+.slider01 .box .num {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+}
+
+.slider01 .content>li {
+    display: none;
+    padding: 20px;
+}
+
+.slider01 .content>li.on {
+    display: block;
+}
+
+.slider02 {
+    background-color: #f7f7f7;
+    padding: 100px 0;
+}
+
+.slider02 .container {
+    display: flex;
+    width: calc((100% - 1200px) / 2 + 1200px);
+    background-color: #333;
+    margin: 0 0 0 auto;
+}
+
+.slider02 .container .left {
+    width: 30%;
+    overflow: hidden;
+}
+.slider02 .container .right {
+    width: 70%;
+    overflow: hidden;
+}
+.slider02 .container .right .right_slider {
+    width: 150%;
+}
+
+.slider02 .container .right figure {
+    padding: 0 30 0px;
+}
+
+.l-arrow i {
+    font-size: 30px;
+    padding: 5px;
+    margin: 10px 0 10px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+}

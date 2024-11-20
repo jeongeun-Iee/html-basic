@@ -1,0 +1,23 @@
+.ddd {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+
+figure {
+    height: 600px;
+    background-color: #ddd;
+}
+
+.swiper-slide-active {
+font-size: 100px;
+transition: 0.5s;
+}
+
+.item01 {
+    background-color: darkseagreen;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: black;
+}

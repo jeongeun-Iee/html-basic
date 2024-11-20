@@ -1,0 +1,208 @@
+img {
+    max-width: 100%;
+}
+
+.visual_slider figure {
+    height: 600px;
+}
+
+.visual_slider .item01 {
+    background: url(../img/mainvisual01.jpg) no-repeat center center/cover;
+}
+
+.visual_slider .item02 {
+    background: url(../img/mainvisual02.jpg) no-repeat center center/cover;
+}
+
+.visual_slider .item03 {
+    background: url(../img/mainvisual03.jpg) no-repeat center center/cover;
+}
+
+.main {
+    position: relative;
+}
+
+.main .slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    color: #fff;
+    text-shadow: 0 0 30px #000;
+}
+
+.main .slogan h2 {
+    font-size: 50px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.main .slogan p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.main .slick-dots {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main .slick-dots li {
+    display: inline-block;
+    width: 100px;
+    height: 6px;
+    background-color: #333;
+    border-radius: 10px;
+    margin: 0 6px;
+    opacity: 0.5;
+}
+
+.main .slick-dots li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.main .slick-dots li.slick-active::after {
+    width: 100%;
+    transition: 2s;
+}
+
+.main .slick-dots li button {
+    display: none;
+}
+
+.main .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+
+    font-size: 0;
+    border: none;
+    background: transparent;
+
+    width: 100px;
+    height: 100px;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    opacity: 0.3;
+}
+
+.main .slick-arrow:hover {
+    opacity: 1;
+    transition: border 0.5s;
+}
+
+
+.main .slick-prev {
+    margin: 0 0 0 -700px;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.main .slick-next {
+    margin: 0 0 0 700px;
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.main .wheel {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 55px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    font-size: 0;
+}
+
+/* 속성을 두 번 쓰면 앞에 있던 속성값이 잡아 먹히고 뒤에 있던 속성값만 적용됨 */
+
+.main .wheel span {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 12px;
+    background: #fff;
+    border-radius: 5px;
+    animation: wheel 1s infinite;
+}
+
+@keyframes wheel {
+    to {
+        top: 15px;
+    }
+}
+
+.slider {
+    margin-top: 50px;
+}
+
+.slider02 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.slider li {
+    float: left;
+}
+
+.slider button {
+    font-size: 0;
+    border: none;
+    background: transparent;
+    padding: 0 20px;
+    margin-top: 25px;
+}
+
+.slider button::after {
+    content: "\e9c6";
+    display: block;
+    font-family: xeicon;
+    font-size: 20px;
+    transform: rotate(90deg);
+}
+
+.slider .slick-dots  {
+    max-width: 180px;
+    margin: 0 auto;
+}
+
+.slider .slick-dots::after {
+content: "";
+display: block;
+clear: left;
+}
+
+.slider02 button {
+    font-size: 0;
+    border: none;
+    background: transparent;
+    padding: 5px;
+}
+
+.slider02 button:nth-child(1)::after {
+    content: "\e92f";
+    display: block;
+    font-family: xeicon;
+    font-size: 25px;
+    transform: rotate(-90deg);
+}
+.slider02 button::after {
+    content: "\e92f";
+    display: block;
+    right: 0;
+    font-family: xeicon;
+    font-size: 25px;
+    transform: rotate(90deg);
+
+}

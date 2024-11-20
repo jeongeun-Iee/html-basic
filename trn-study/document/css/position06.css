@@ -1,0 +1,258 @@
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+.top_banner button::after {
+    content: "close";
+}
+
+.top_banner.active button::after {
+content: "open";
+}
+
+.top_banner .container {
+    width: 1200px;
+    margin: 0 auto;
+    height: 100px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+.top_banner.active .container {
+    height: 0px;
+}
+
+.top_banner.active i {
+    transform: rotate(180deg);
+}
+
+.top_banner {
+    position: relative;
+    background-color: rgb(157, 157, 108);
+}
+
+.top_banner button {
+    position: absolute;
+    bottom: -20px;
+width: 100px;
+line-height: 20px;
+left: 50%;
+transform: translate(-50%);
+margin-left: 500px;
+background-color: rgb(157, 157, 108);
+border: none;
+outline: none;
+cursor: pointer;
+}
+
+.header {
+    line-height: 100vh;
+    background: rgb(222, 230, 219);
+    color: #333(0, 0, 0);
+    text-align: center;
+}
+
+.right_banner {
+    position: fixed;
+    top: 50vh;
+    right: -100px;
+    background: rgb(157, 157, 108);
+    transition: right 0.5s;
+}
+
+.right_banner:hover {
+    right: 0;
+}
+
+.sun {
+    position: absolute;
+    top: 300px;
+    right: 300px;
+    width: 100px;
+    height: 100px;
+    background: #f00;
+    border-radius: 50%;
+    animation: sun_move 5s infinite linear;
+}
+
+.sun li {
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background: #f00;
+}
+
+.sun li:nth-child(1) {
+    top: 48px;
+    left: -60px;
+}
+.sun li:nth-child(2) {
+    top: 48px;
+    left: 110px;
+}
+.sun li:nth-child(3) {
+    top: -40px;
+    left: 25px;
+    transform: rotate(90deg);
+}
+.sun li:nth-child(4) {
+    top: 135px;
+    left: 25px;
+    transform: rotate(90deg);
+}
+.sun li:nth-child(5) {
+    top: 110px;
+    left: -40px;
+    transform: rotate(135deg);
+}
+.sun li:nth-child(6) {
+    top: 110px;
+    left: 90px;
+    transform: rotate(40deg);
+}
+.sun li:nth-child(7) {
+    top: -15px;
+    left: -40px;
+    transform: rotate(45deg);
+}
+.sun li:nth-child(8) {
+    top: -15px;
+    left: 90px;
+    transform: rotate(135deg);
+}
+
+@keyframes sun_move {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.car {
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    width: 200px;
+    height: 100px;
+    background: rgb(134, 231, 65);
+    border-radius: 50px 10px 0 0 ;
+    animation: car_move 6s infinite linear;
+}
+
+.car li:nth-child(1) {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 50px;
+    background: rgb(227, 227, 227);
+    border-radius: 30px 0 0 0 ;
+}
+.car li:nth-child(2) {
+    position: absolute;
+bottom: -15px;
+left: 20px;
+    width: 30px;
+    height: 30px;
+    background:#333;
+    border-radius: 10px ;
+            animation: baki 2s infinite linear;
+}
+.car li:nth-child(3) {
+    position: absolute;
+bottom: -15px;
+right: 20px;
+    width: 30px;
+    height: 30px;
+    background:#333;
+    border-radius: 10px ;
+        animation: baki 2s infinite linear;
+}
+.car li:nth-child(4) {
+    position: absolute;
+    top: 10px;
+    left: 80px;
+    width: 40px;
+    height: 50px;
+    background: rgb(227, 227, 227);
+    border-radius: 1px 1px 1px 1px ;
+}
+.car li:nth-child(5) {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 50px;
+    background: rgb(227, 227, 227);
+    border-radius: 1px 1px 1px 1px ;
+}
+
+
+@keyframes baki {
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes car_move {
+    to {
+        right: 2000px;
+    }
+}
+
+.myheart {
+    position: absolute;
+    top: 250px;
+    left: 250px;
+    color: rgb(251, 165, 224);
+    font-size: 50px;
+    animation: heart 1.5s infinite;
+}
+
+@keyframes heart {
+    to {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+.road {
+    position: relative;
+    height: 100px;
+    margin: 0 auto;
+    background: rgb(104, 93, 37);
+}
+
+.road .tile li {
+position: absolute;
+width: 100px;
+height: 15px;
+background: #000;
+top: 50%;
+}
+
+.road .tile li:nth-child(2) {
+    left: 200px;
+}
+.road .tile li:nth-child(3) {
+    left: 400px;
+}
+.road .tile li:nth-child(4) {
+    left: 600px;
+}
+.road .tile li:nth-child(5) {
+    left: 800px;
+}
+.road .tile li:nth-child(6) {
+    left: 1000px;
+}
+.road .tile li:nth-child(7) {
+    left: 1200px;
+}
+.road .tile li:nth-child(8) {
+    left: 1400px;
+}
+.road .tile li:nth-child(9) {
+    left: 1600px;
+}
+.road .tile li:nth-child(10) {
+    left: 1800px;
+}
+
+

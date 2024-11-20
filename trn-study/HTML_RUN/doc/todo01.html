@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <style>
+        #tabContent>div {
+            display: none;
+        }
+
+        #tabContent>div.on {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <form name="actionForm" id="actionForm">
+        <input name="userName" type="text" required>
+        <button>submit</button>
+    </form>
+    <ul id="todoList"></ul>
+</body>
+<script>
+
+    const userForm = document.querySelector('#actionForm');
+    const totoList = document.querySelector('#todoList');
+
+
+
+    const formHandle = e => {
+        e.preventDefault();
+
+        let somename = userForm.userName;
+
+        const li = document.createElement('li');
+        const span = document.createElement('i');
+        span.setAttribute('class', 'xi-bars')
+        li.innerText = somename.value;
+        totoList.appendChild(li);
+        li.appendChild(span)
+
+        somename.value = '';
+        userForm.userName.focus();
+
+        const totoIcon = document.querySelectorAll('#todoList i');
+        totoIcon.forEach(
+            el => el.addEventListener('click', e => {
+                e.target.parentElement.remove();
+            })
+        )
+
+
+    }
+
+    userForm.addEventListener('submit', formHandle)
+
+</script>
+
+</html>

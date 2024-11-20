@@ -1,0 +1,68 @@
+* {
+  background: rgb(255, 255, 255);
+}
+h1 {
+  line-height: 100px;
+  background: rgb(238, 167, 167);
+}
+nav {
+  line-height: 100px;
+  background: rgb(176, 224, 142);
+}
+.right {
+  line-height: 100px;
+  background: rgb(149, 149, 255);
+}
+.end {
+  line-height: 100px;
+  background: #5ddab9;
+}
+
+.header01 {
+  display: flex;
+}
+.header02 {
+  display: flex;
+  justify-content: center;
+}
+.header03 {
+  display: flex;
+  justify-content: space-between;
+}
+.header04 {
+  display: flex;
+  justify-content: space-between;
+}
+.header05 {
+  display: flex;
+}
+.header05 nav {
+  margin: 0 0 0 auto;
+}
+.header06 {
+  display: flex;
+}
+.header06 .right {
+  margin: 0 0 0 auto;
+}
+.basic {
+  line-height: 100px;
+}
+
+.basic .container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.basic nav {
+  margin: 0 0 0 auto;
+}
+
+.basic nav ul {
+  display: flex;
+  gap: 30px;
+}
+.basic .icon {
+  margin: 0 0 0 30px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <style>
+        .inner {
+            position: relative;
+            padding-bottom: 56.25%;
+        }
+
+        .inner iframe {
+            position: absolute;
+            inset: 0 0 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="iframe">
+        <div class="inner">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/mT19dr2rVwQ"
+                title="한화건설의 새로운 주거 브랜드, 포레나 TV CF 본편 공개" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+</body>
+
+</html>

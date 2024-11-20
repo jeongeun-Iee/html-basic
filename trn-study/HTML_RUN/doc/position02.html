@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position02</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            color: #fff;
+            text-align: center;
+            line-height: 100vh;
+        }
+
+        header {
+            background: #f00;
+        }
+        main {
+            background: #ff0;
+        }
+        footer {
+            background: #00f;
+        }
+
+        .container {
+            display: flex;
+        }
+        .container figure {
+            flex: 1;
+            line-height: 1.4;
+        }
+
+        .container figure:nth-child(2) {
+            background: #333;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="sticky">
+        header
+    </header>
+    <main class="sticky">
+
+    </main>
+    <section class="sticky">
+        <div class="container">
+            <figure>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae velit dolores dolorum dicta aliquam cupiditate! Laborum deleniti officiis provident minima aut possimus rem minus, fuga ipsam alias praesentium dolor, fugiat nulla eligendi sequi quibusdam dignissimos consequuntur numquam repudiandae odio obcaecati commodi vero ullam? Numquam quas nobis beatae, omnis, sapiente a quo possimus magni ex atque veniam nesciunt amet qui perspiciatis, repudiandae optio corrupti aut? Quis hic cumque, labore doloribus molestias excepturi suscipit eius fuga, beatae tenetur numquam nobis! Maiores, repellendus vero non ipsam expedita iure aperiam doloribus adipisci cum, beatae perspiciatis temporibus odio velit veritatis rerum facilis cupiditate earum quas. Veniam hic facilis suscipit quas facere. Fugiat necessitatibus quasi commodi iure cumque, possimus molestias. Maxime deleniti exercitationem doloribus, consectetur unde illum facere eaque veniam nesciunt, iusto ab esse corrupti modi quidem error ex quisquam, vero facilis ratione voluptates deserunt dolores? Expedita commodi neque quis? Facilis optio dolor, alias fugit nemo commodi laborum soluta sed ea, recusandae illum exercitationem facere omnis accusamus eos, reiciendis iusto doloribus vel cupiditate quo id doloremque eaque? Voluptates perspiciatis atque recusandae doloribus dicta exercitationem aperiam officia officiis. Reprehenderit eligendi doloribus quia architecto ipsum velit voluptates veritatis, eos suscipit autem, asperiores harum nihil, atque expedita reiciendis hic.
+            </figure>
+            <figure>
+                
+            </figure>
+
+        </div>
+    </section>
+    <footer class="sticky">
+        footer
+    </footer>
+
+
+
+</body>
+
+</html>

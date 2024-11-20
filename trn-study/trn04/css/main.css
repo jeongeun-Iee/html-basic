@@ -1,0 +1,325 @@
+* {
+    outline: 1px solid --rgb(0, 94, 255);
+}
+
+p {
+    line-height: 1.45;
+}
+
+.container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    letter-spacing: -0.025em;
+}
+
+.Wrap {
+position: relative;
+}
+
+/* --- #Header 시작 --- */
+#Header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 1900px;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    line-height: 77px;
+    transition: 0.5s;
+    z-index: 999;
+}
+
+#Header.on {
+    background-color: rgba(0,0,0,1);
+}
+
+#Header .Gnb ul {
+display: flex;
+gap: 30px;
+}
+
+#Header h1 {
+    width: 300px;
+}
+
+#Header .tel {
+    width: 300px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: right;
+}
+
+#Header .tel i {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    font-size: 13px;
+    border-radius: 50%;
+    transform: translateY(-5px);
+    margin: 0 10px 0 0;
+}
+
+main {
+    position: relative;
+    z-index: 1;
+}
+
+/* --- #MainVisual 시작 --- */
+#MainVisual {
+    position: relative;
+}
+
+#MainVisual .slogan {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+    z-index: 998;
+}
+
+#MainVisual .slogan strong {
+    display: block;
+    margin: 0 0 30px 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#MainVisual .slogan h2 {
+    margin: 0 0 30px 0;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+#MainVisual .slogan p {
+    margin: 0 0 30px 0;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#MainVisual .MainSlider figure {
+    height: 100vh;
+}
+
+#MainVisual .MainSlider .item01 {
+background: url(../images/bg_intro01.jpg) no-repeat center center/cover;
+}
+#MainVisual .MainSlider .item02 {
+background: url(../images/bg_intro02.jpg) no-repeat center center/cover;
+}
+#MainVisual .MainSlider .item03 {
+background: url(../images/bg_intro03.jpg) no-repeat center center/cover;
+}
+
+#MainVisual .swiper-pagination {
+    bottom: 100px;
+}
+
+#MainVisual .swiper-pagination span {
+    width: 100px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+}
+
+#MainVisual .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #00ced1;
+}
+
+/* --- #Premium 시작 --- */
+#Premium {
+    padding: 100px 0;
+    text-align: center;
+}
+
+#Premium strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+#Premium h2 {
+    display: block;
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-weight: 500;
+    color: #deb887;
+}
+
+#Premium h3 {
+    margin: 0 0 30px 0;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+#Premium .container {
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#Premium .container figure {
+    position: relative;
+    width: calc(50% - 15px);    
+}
+
+#Premium .container figure::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 0;
+    border-top: 20px solid #deb887;
+    border-bottom: 20px solid #deb887;
+    border-left: 20px solid #deb887;
+    border-right: 20px solid transparent;
+    top: 10px;
+    left: -20px;
+    z-index: 999;
+}
+
+#Premium .container figure::after {
+    content: attr(data-title);
+    position: absolute;
+    top: 21px;
+    left: 5px;
+    z-index: 999;
+    color: #fff;
+    font-size: 15px;
+}
+
+#Premium .container .box {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#Premium .container .box img {
+transition: 0.5s;
+}
+
+#Premium .container .box:hover img {
+    transform: scale(1.2);
+}
+
+#Premium figure:nth-child(1) {
+    transform: translate(-50px, 0);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#Premium.on figure:nth-child(1) {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#Premium figure:nth-child(2) {
+    transform: translate( 0, -50px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#Premium.on figure:nth-child(2) {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: 0.5s 0.5s;
+}
+
+#Premium figure:nth-child(3) {
+    transform: translate( 0, 50px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#Premium.on figure:nth-child(3) {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: 0.5s 1s;
+}
+
+#Premium figure:nth-child(4) {
+    transform: translate(50px, 0);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#Premium.on figure:nth-child(4) {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: 0.5s 1.5s;
+}
+
+/* --- #Customer 시작 --- */
+#Customer {
+    padding: 100px 0 400px 0;
+    background: url(../images/bg_main2.jpg) no-repeat center bottom/cover;
+    color: #fff;
+    text-align: center;
+}
+
+#Customer h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 40px 0;
+    line-height: 1.2;
+}
+
+#Customer h3 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    line-height: 1.2;
+}
+
+#Customer p {
+    font-size: 14px;
+}
+
+#Customer .container {
+    gap: 30px;
+}
+
+#Customer .container>div {
+    position: relative;
+    flex: 1;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+#Customer .container>div a::after {
+    content: "\e907";
+    font-family: xeicon !important;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    padding: 20px;
+    border: 3px solid #deb887;
+    background: #fff;
+    color: #333;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+#Customer .container>div:hover a::after {
+    content: "\e905";
+    border: 3px solid #deb887;
+    background: #deb887;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#Customer .container a {
+    display: block;
+    padding: 100px 30px;
+}

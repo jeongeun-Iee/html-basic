@@ -1,0 +1,48 @@
+html { font-size: 20px; }
+body { font-size: 0.8rem; }
+
+.container { display: flex; gap: 30px; width: 1200px; margin: 0 auto; }
+
+
+header { line-height: 5rem; }
+.gnb { background-color: #f1f1f1; }
+.gnb>ul { gap: 0; }
+.gnb>ul>li { flex: 1; text-align: center; }
+.gnb>ul>li~li { border-left: 1px solid #ddd; }
+.gnb>ul>li>a { display: block; line-height: 2rem; }
+
+
+ 
+.step-01 { padding: 100px 0; background-color: rgb(255, 136, 89); text-align: center; }
+.step-01 h2 { font-size: 1.25rem; margin: 0 0 0.5rem 0; }
+.step-01 p { font-size: 0.75rem; margin: 0 0 1.5rem 0; }
+
+
+.mbtn { display: none; }
+
+
+/* 반응형 만들기 */
+@media screen and (max-width: 1200px){
+    .container { width: auto; }
+    .step-01 { background-color: rgb(239, 255, 135); }
+
+}
+
+@media screen and (max-width: 768px){
+    .container { padding: 0 0.75rem; }
+    .step-01 { background-color: rgb(110, 160, 209); color: #fff; }
+
+}
+
+@media screen and (max-width: 560px){
+    html { font-size: 16px; }
+    .mbtn { position: fixed; inset: 1rem 1rem auto auto; display: block; }
+    .gnb {  display: none; background-color: #fff; }
+    .gnb>ul>li~li { border-left: none; border-top: 1px solid #ddd; }
+    .container { flex-direction: column; }
+    .step-01 { background-color: rgb(255, 122, 166); }
+    .step-01 h2 { font-size: 8vw; }
+}
+
+
+

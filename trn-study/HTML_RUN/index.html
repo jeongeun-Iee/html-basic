@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML BASIC</title>
+    <style>
+        .html h1 {
+            padding: 0 0 0 15px;
+            color: rgb(233, 87, 80);
+            font-size: 40px;
+        }
+
+        .html ul {
+            margin: 30px 0 50px 0;
+        }
+
+        .css h1 {
+            padding: 0 0 15px 15px;
+            color: rgb(95, 164, 255);
+            border-bottom: 1px solid rgb(110, 110, 110);
+            font-size: 40px;
+        }
+
+        .css ul {
+            margin: 30px 0 50px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="html">
+        <h1>HTML BASIC</h1>
+        <hr />
+        <h2>기본 박스 : box-model</h2>
+        <ul>
+            <li>
+                <a href="./doc/box01.html">기본 박스 01</a>
+                <p><strong> 기본적인 박스의 성질에 대한 이해 width height padding margin</strong></p>
+                <ol>
+                    <li>
+                        <p>박스는 기본적으로 width와 height가 auto이다.</p>
+                    </li>
+                    <li>
+                        <p>박스는 기본적으로 투명하고 y축으로 쌓여간다.</p>
+                    </li>
+                    <li>
+                        <p>박스는 기본적으로 block 옆에 block이 오지 못하게 한다.</p>
+                    </li>
+
+                </ol>
+            </li> <br>
+            <li>
+                <a href="./doc/box02.html">기본 박스 02</a>
+                <p><strong> 선택자에 대한 이해</strong></p>
+                <ol>
+                    <li>
+                        <p> 모든 선택자는 *</p>
+                    </li>
+                    <li>
+                        <p>:nth-child(N)= 부모안에 모든 요소 중 N번째 요소 <br />
+                            A :nth-of-type(N)= 부모안에 A라는 요소 중 N번째 요소</p>
+                    </li>
+                    <li>
+                        <p> # id는 . class 보다 상위 선택자이다 <br>
+                            id > class > 요소</p>
+                    </li>
+                    <li>
+                        <p>
+                            인접 형제 선택자, 일반 형제 선택자 </p>
+                        <p>
+                            - 인접 형제 선택자의 문법 형태는 A + B<br>
+
+                            A 바로 뒤에 오는 B만 선택된다 </p>
+
+
+                        - 일반 형제 선택자의 문법 형태는 A ~ B<br>
+
+                        A 뒤에 오는 모든 B들이 선택된다
+
+                    </li>
+
+                </ol>
+            </li>
+        </ul>
+    </div>
+    <hr />
+    <div class="css">
+        <h1>CSS</h1>
+
+        <h2>다단메뉴 만들기</h2>
+        <ul>
+            <li>
+                <a href="./doc/multi_menu01.html">다단메뉴 01</a>
+                <p>hover를 사용해서 메뉴에 커서를 가져다대면 하위메뉴가 뜨도록 하고 두번째 메뉴에 동글뱅이로 포인트를 줌</p>
+
+            </li> <br>
+            <li>
+                <a href="./doc/multi_menu02.html">다단메뉴 02</a>
+                <p>다단메뉴 01과 비슷한 구조이지만 애니메이션을 주었다</p>
+                <p> opacity, visibility, display 차이점에 대해 배움</p>
+            </li>
+        </ul>
+        <hr />
+
+        <h2>Display & Position</h2>
+        <ul>
+            <li>
+                <a href="./doc/display01.html">Display 01</a>
+                <p>
+                    1. inline 요소는 w,h, 상하m,p 값을 줄 수가 없다 <br>
+
+                    2. inline-block요소의 부모에 text-align:center로 박스를 가로로 배열할 수 있다 <br>
+
+                    3. inline-block 요소 사이의 간격을 붙이려면 font-size:0; 을 해주어야 한다 <br>
+
+                    4. inline 요소를 inline-block요소로 바꾸면 박스 사이의 간격이 4px 정도 생긴다 <br>
+
+                </p>
+
+            </li> <br>
+            <li>
+                <a href="./doc/position01.html">Position 01</a>
+                <p>1. relative - absolute 관계에 대해서 배움 <br>
+                    2. fixed와 sticky 둘의 차이에 대해서도 배웠다</p>
+            </li>
+            <li>
+                <a href="./doc/position02.html">Position 02</a>
+                <p>1. position: sticky; 에 대해 배움 <br>
+                    sticky는 요소가 컨테이너보다 커서 스크롤이 생겨날 때, 스크롤이 되거나 말거나 자기 상위 요소에 달라붙는다. <br> 끈끈하게 달라붙는다.</p>
+            </li>
+            <li>
+                <a href="./doc/position03.html">Position 03</a>
+                <p>1. filter: grayscale( ) brightness( ); 를 새롭게 배움 <br>
+                    2. position: sticky;을 사용해서 웹사이트 만들어 봄</p>
+            </li>
+            <li>
+                <a href="./doc/hover01.html">Hover 01</a>
+                <p>
+                    1. hover를 이용해서 position을 공부해 보았다.
+                    hover는 hover를 준 곳에 마우스를 올리면 {어쩌고저쩌고}처럼 변하도록 해주세요 라는 뜻임
+                    <br>
+                    예를 들어 figure 안에 opacity를 0으로 지정하여 투명하게 안 보이도록 해주고 figure:hover 안에 opacity:1을 지정해주면 figure에 마우스를 올렸을
+                    때(hover) figure가 투명도가 없게 해주세요(opacity:1)이다.
+                </p>
+            </li>
+            <li>
+                <a href="./doc/pseudo_element01.html">Pseudo_element01</a>
+                <p>
+                    오늘은 ::before와 ::after을 배웠다 <br>
+                    <strong>::before와 ::after은 content와 꼭 같이 써줘야 한다</strong>
+                </p>
+            </li>
+            <li>
+                <a href="./doc/psdtohtml02.html">Psdtohtml02</a>
+                <p>
+                    포토샵으로 만든 페이지를 코딩으로 똑같이 만들어봤다 <br>
+                    포토샵 너무 어렵다 ,,,,,,,,,,,,
+                </p>
+            </li>
+        </ul>
+        <hr>
+
+        <h2>Header</h2>
+        <ul>
+            <li>
+                <a href="./doc/basic01.html">basic 01</a>
+                <p>
+                    HTML 기본 골격
+                </p>
+            </li>
+            <li>
+                <a href="./doc/header01.html">header 01</a>
+                <p>
+                    header에 로고와 nav를 만들어 넣었다
+                </p>
+            </li>
+            <li>
+                <a href="./doc/header02.html">header 02</a>
+                <p> nav 옆에 아이콘 박스를 하나 만들었다 </p>
+            </li>
+            <li>
+                <a href="./doc/header03.html">header 03</a>
+                <p>header에 위치한 로고와 nav와 아이콘을 justify-content: space-between; 를 사용해서 요소들 "사이(between)"에 균일한 간격을 만들어 준다
+                </p>
+            </li>
+            <li>
+                <a href="./doc/header04.html">header 04</a>
+                <p>header에 container와 nav를 margin:0 auto;를 해도 가운데 정렬이 된다</p>
+            </li>
+            <li>
+                <a href="./doc/header05.html">header 05</a>
+                <p>
+                    header에 로고를 가운데 배치시키고 메뉴를 로고 좌우로 배치시켰다
+                </p>
+            </li>
+        </ul>
+        <hr>
+        <h2>slick</h2>
+        <ul>
+            <li>
+                <a href="./doc/slick01.html">slick 01</a>
+                <p> slick의 다양한 기능들을 배웠다</p>
+            </li>
+            <li>
+                <a href="./doc/slick02.html">slick 02</a>
+                <p> 어제에 이어서 slick의 다양한 기능들을 배웠다</p>
+                <p> javascript 1도 이해못하겠다,,,,,,</p>
+            </li>
+            <li>
+                <a href="./doc/slick03.html">slick 03</a>
+                <p> slick을 이용해서 메인비주얼 슬라이드를 만들었다</p>
+            </li>
+        </ul>
+
+        <hr>
+        <h2>etc.</h2>
+        <ul>
+            <li>
+                <a href="./doc/movie01.html">movie01</a>
+                <p>동영상 넣는 법에 대해서 배웠다</p>
+            </li>
+            <li>
+                <a href="./doc/fullpage01.html">fullpage01</a>
+                <p> 포트폴리오를 만들 때 사용하는 fullpage 사용법에 대해서 배웠다</p>
+                <strong><em>2022.06.16</em></strong>
+            </li>
+        </ul>
+
+    </div>
+
+
+</body>
+
+</html>

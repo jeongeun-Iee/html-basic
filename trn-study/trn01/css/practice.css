@@ -1,0 +1,29 @@
+:root {
+  --mc: #369;
+  --gc: #dddddd;
+  --wc: #f8f9fa;
+  --dc: #000000;
+}
+
+.top_banner {
+    border-top: 3px solid var(--mc);
+    border-bottom: 1px solid var(--gc);
+    line-height: 30px;
+    font-size: 12px;
+}
+
+.top_banner .container {
+    display: flex;
+    justify-content: flex-end;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.container li {
+border-right: 1px solid var(--gc);
+padding: 0 10px;
+}
+
+.header {
+  display: flex;
+}
